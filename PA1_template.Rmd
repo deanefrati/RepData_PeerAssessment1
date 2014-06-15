@@ -156,3 +156,8 @@ ap <- aggregate(data.complete$steps, by=list(data.complete$day.type,data.complet
 names(ap) <- c("day.type","interval","avgsteps")
 qplot(x=interval, y=avgsteps, data=ap, geom="line", facets= day.type ~., xlab="Interval", ylab="Number of steps", main="Differences in activity patterns between weekdays and weekends")
 ```
+
+As we can see by comparing the activity patterns of weekdays and weekends: 
+* The highest number of steps taken on weekdays is higher than weekends. 
+* We can also see that the higest activity peaks on both weekdays and weekends are between the 500th and 1000th 5-miute interval. 
+* Finally we can see that it lookls like there is more activity on the weekends between the 1000th and 2000th 5-minute intervals.

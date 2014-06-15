@@ -278,3 +278,8 @@ qplot(x=interval, y=avgsteps, data=ap, geom="line", facets= day.type ~., xlab="I
 ```
 
 ![plot of chunk unnamed-chunk-17](figure/unnamed-chunk-17.png) 
+
+As we can see by comparing the activity patterns of weekdays and weekends: 
+* The highest number of steps taken on weekdays is higher than weekends. 
+* We can also see that the higest activity peaks on both weekdays and weekends are between the 500th and 1000th 5-miute interval. 
+* Finally we can see that it lookls like there is more activity on the weekends between the 1000th and 2000th 5-minute intervals.
